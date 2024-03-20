@@ -1,0 +1,19 @@
+{
+  "name": "inm420-weather",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Amanda Lutz",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "lightbox2": "^2.11.4",
+    "parsleyjs": "^2.9.2"
+  }
+}
