@@ -321,6 +321,7 @@ form {
     }
 
     nav {
+        background-color: transparent;
         height: 40px;
         padding: 100px;
         display: flex;
