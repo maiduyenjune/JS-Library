@@ -8,6 +8,10 @@ body {
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+}
+
 /* HERO SECTION */
 .hero {
     background-color: #F9F1E7;
@@ -26,6 +30,7 @@ body {
 
 /* NAVIGATION */
 nav {
+    background-color: #252525;
     height: 40px;
     width: 100%;
     max-width: 100%;
@@ -43,6 +48,54 @@ nav .menu, .search, .logo {
     display: none;
 }
 
+/* Dropdown Button */
+.dropbtn {
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
 /* PROFILE */
 .profile-1 {
     display: none;
@@ -54,9 +107,8 @@ nav .menu, .search, .logo {
     height: 100%;
 }
 
-
-
-.hero button {
+/* Hero button */
+.shop-now {
     background-color: #E89F71;
     font-weight: 800px;
     font-size: 20px;
@@ -120,7 +172,6 @@ main h2 {
     gap: 8px;
     padding-left: 12px;
     padding-bottom: 16px;
-    width: 100px;
 }
 
 .card h4 {
@@ -223,7 +274,7 @@ input {
     color: white;
 }
 
-.send {
+.btn {
     background-color: #E89F71;
     padding: 10px;
     width: 100%;
@@ -247,6 +298,8 @@ form {
 
 /* STYLING FOR WEB */
 @media only screen and (min-width: 800px) {
+
+    /* Hero section styling for web */
     .hero {
         background-color: #F9F1E7;
         height: 100vh;
@@ -258,12 +311,13 @@ form {
         padding: 150px;
     }
 
-    .hamburger {
-        display: none;
-    }
-
     .logo {
         display: block;
+    }
+
+    /* hide menu */
+    .dropdown {
+        display: none;
     }
 
     nav {
@@ -298,6 +352,7 @@ form {
         width: max-content;
     }
 
+    /* profile */
     .profile {
         display: flex;
         gap: 40px;
@@ -315,7 +370,8 @@ form {
 
     }
 
-    .hero button {
+    /* Hero styling for web */
+    .shop-now {
         background-color: #E89F71;
         font-weight: 800px;
         font-size: 20px;
@@ -340,7 +396,7 @@ form {
         padding: 60px;
     }
 
-
+    /* Main part styling for web */
     main h2 {
         padding-top: 100px;
         padding-bottom: 64px;
@@ -356,6 +412,7 @@ form {
         width: 100%;
     }
 
+    /* grid styling */
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -383,12 +440,6 @@ form {
         font-weight: 500;
     }
 
-    /* .grid-1 {
-        padding-left: 16px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    } */
-
     .setup h2 {
         padding-top: 100px;
         padding-bottom: 64px;
@@ -414,7 +465,7 @@ form {
 
     }
 
-
+    /* Footer */
 
     footer {
         display: flex;
